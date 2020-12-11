@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: #fff;
+    font-family: 'Nerko One', cursive;
+}
+#warp{
+    width: 980px;
+    margin: 0 auto ;
+}
+#header{
+    background-color: #F0FFFF;
+    height: 64px;
+    text-align: center;
+    font-size: 35px;
+}
+#content{
+    background-color: #FFE4E1;
+    min-height: 200px;
+    height: 600px;
+}
+#footer{
+    background-color: #F0FFFF;
+    height: 50px;
+}
+
+.in-out{
+    width: 130px;
+    height: 40px;
+    margin: 25px;
+
+}

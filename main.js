@@ -6,15 +6,29 @@ var IP20_1 = ["1.Б'єсик Володимир Михайлович", "2.Вас
 "20.Микитенко Максим Володимирович ", "21.Михайлович Василь Вікторович", "22.Мінаєв Владислав Олександрович", 
 "23.Ничик Богдан Ігорович", "24.Петрів Соломія Богданівна", "25.Ріпський Владислав Андрійович", 
 "26.Сінітович Олег Васильович", "27.Солнцев Олександр Юрійович", "28.Фокащук Денис Романович", "29.Щербатий Анатолій Романович"]
-var to = 9
-var from = 0
-var i = 0
-var j = from
-for (; j <= to; j++) {
-    console.log(IP20_1[i] + "  " + j)
-    ++i;
-    if (i === IP20_1.length)
-        break
-    if (j === to)
-        j = from-1
+
+function count(){
+    var input = document.getElementById('in').value;
+    if(input>9){
+        while(input>9){
+            input-=9;
+        }
+        document.getElementById('out').value = input;
+    }else{
+        document.getElementById('out').value = input;
+    }
 }
+
+
+// var to = 9
+// var from = 0
+// var i = 0
+// var j = from
+// for (; j <= to; j++) {
+//     console.log(IP20_1[i] + "  " + j)
+//     ++i;
+//     if (i === IP20_1.length)
+//         break
+//     if (j === to)
+//         j = from-1
+// }
